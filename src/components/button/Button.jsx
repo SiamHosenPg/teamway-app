@@ -1,8 +1,14 @@
 import React from "react";
 
-const Button = ({ buttonname }) => {
+const Button = ({ buttonname, model }) => {
   return (
-    <div className=" border px-4 py-2 rounded-full font-semibold">
+    <div
+      className={`${
+        model == "color"
+          ? "bg-yellow-600 border-yellow-600 text-white"
+          : "bg-transparent "
+      } border px-7 py-3 rounded-full font-medium w-fit`}
+    >
       {buttonname}
     </div>
   );
