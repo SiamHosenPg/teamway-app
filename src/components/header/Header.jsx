@@ -9,7 +9,6 @@ import { motion } from "framer-motion";
 const Header = () => {
   return (
     <div className=" pt-6 h-screen max-h-[1870px] ">
-      <Nav />
       <div className="Pagearea flex gap-10  items-center justify-between h-full mt-[-60px] ">
         <div className="left w-6/12">
           <motion.h1

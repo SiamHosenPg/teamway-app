@@ -29,28 +29,31 @@ const Service = () => {
           grow faster and look better online.
         </motion.p>
         <div className=" pt-18">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 ">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 ">
             {servicedata.map((service, i) => {
               return (
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.4, delay: i * 0.3 }}
+                  transition={{ duration: 0.3, delay: i * 0.2 }}
                   viewport={{ once: true }}
                   key={i}
-                  className="bg-gray-50 p-8 py-12 rounded-lg border border-gray-200  hover:shadow-lg transition-shadow duration-300"
+                  className=" p-8 py-12 flex gap-6 rounded-lg border border-gray-200 bg-gray-50  hover:bg-blue-50 duration-300 "
                 >
-                  <img
-                    src={service.image}
-                    alt={service.title}
-                    className="w-[80px]  object-cover mb-4 rounded"
-                  />
-                  <h5 className=" font-semibold mb-2">{service.title}</h5>
-                  <p className="text-gray-700 mt-4">{service.description}</p>
-                  <div className="mt-6">
-                    <button className="flex items-center gap-2  transition-colors duration-300">
-                      Learn More <FaAngleRight />
-                    </button>
+                  <div className="w-20 h-20 shrink-0 flex items-center justify-center bg-white border border-gray-200 p-4 rounded">
+                    <img
+                      src={service.image}
+                      alt={service.title}
+                      className=" block shrink-0  object-cover  rounded"
+                    />
+                  </div>
+                  <div>
+                    <b className=" text-base font-semibold mb-2">
+                      {service.title}
+                    </b>
+                    <p className="text-gray-600 text-sm mt-4">
+                      {service.description}
+                    </p>
                   </div>
                 </motion.div>
               );

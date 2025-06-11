@@ -31,7 +31,7 @@ const Companysbox = () => {
                   >
                     <img
                       loading="lazy"
-                      className="w-[160px] h-[70px] object-contain opacity-70 hover:scale-105 transition-transform duration-300"
+                      className="w-[160px] h-[70px] object-contain opacity-50 hover:scale-105 transition-transform duration-300"
                       src={data.logo}
                       alt="Company Logo"
                     />
