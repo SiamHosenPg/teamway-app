@@ -8,9 +8,9 @@ import { motion } from "framer-motion";
 
 const Header = () => {
   return (
-    <div className=" pt-6 h-screen max-h-[1870px] ">
-      <div className="Pagearea flex gap-10  items-center justify-between h-full mt-[-60px] ">
-        <div className="left w-6/12">
+    <div className="   h-auto pt-32 lg:pt-6 lg:h-screen max-h-[1870px] ">
+      <div className="Pagearea flex flex-col-reverse lg:flex-row  gap-32  lg:gap-10   items-center justify-between h-full mt-[-60px] ">
+        <div className="left w-full lg:w-6/12">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -86,7 +86,7 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="right grid  w-5/12 grid-cols-4 gap-4 ">
+        <div className="right grid w-8/12 lg:w-5/12 grid-cols-4 gap-4 ">
           <div className="col-span-2 row-span-2 rounded-4xl  relative z-10">
             <motion.div
               initial={{ opacity: 0, y: 0, scale: 0.1 }}
@@ -126,13 +126,13 @@ const Header = () => {
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
               transition={{ duration: 0.4, delay: 0.8 }}
               viewport={{ once: true }}
-              className="bg-white p-3 absolute top-0 right-0 mt-[40%] mr-[-380px] z-20 rounded-4xl"
+              className="bg-white p-3 absolute top-0 right-0 mt-[49%] 2xl:mt-[40%] mr-[-270px] 2xl:mr-[-380px] z-20 rounded-4xl"
             >
-              <div className=" bg-gray-100 w-[400px] h-[200px] rounded-3xl px-6 py-4">
+              <div className=" bg-gray-100 w-[350px] 2xl:w-[400px]  h-[150px] 2xl:h-[200px] rounded-3xl px-6 py-4">
                 <h6 className=" font-semibold">
                   Our 48m clobarate in project teamwork.
                 </h6>
-                <p className="text-sm mt-4">
+                <p className="text-sm mt-4 hidden 2xl:block">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Repudiandae doloremque consequatur delectus!
                 </p>

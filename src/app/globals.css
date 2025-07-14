@@ -32,6 +32,20 @@ body {
   padding-left: 10%;
   padding-right: 10%;
 }
+@media (max-width: 1568px) {
+  .Pagearea {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+@media (min-width: 2168px) {
+  .Pagearea {
+    width: 1800px;
+    padding-left: 0%;
+    padding-right: 0%;
+    margin: auto;
+  }
+}
 
 h1 {
   font-size: 38px;
