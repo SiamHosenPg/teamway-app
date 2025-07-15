@@ -6,19 +6,19 @@ import { testimonialData } from "./testimonialdata";
 const Testimonial = () => {
   return (
     <div className="Pagearea">
-      <div className="py-32 flex items-center gap-22 justify-between">
-        <div className="w-[50%]">
+      <div className="py-32 flex flex-col lg:flex-row items-center gap-22 justify-between">
+        <div className=" w-full text-center lg:text-left lg:w-[50%]">
           <h2>What Our Customers Say</h2>
           <p className="text-gray-500 mt-10 leading-6">
             We value our customers' feedback and strive to provide the best
             service possible. Here are some testimonials from our satisfied
             clients who have experienced our commitment to excellence.
           </p>
-          <div className="mt-10">
+          <div className="mt-10 flex items-center justify-center lg:justify-start gap-4">
             <Button buttonname="View more" />
           </div>
         </div>
-        <div className=" w-[50%]">
+        <div className=" w-full lg:w-[50%]">
           {testimonialData && testimonialData.length > 0 ? (
             <div className="flex flex-col gap-8  items-end  relative">
               {testimonialData.map((testimonial, i) => (

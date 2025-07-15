@@ -28,8 +28,8 @@ const Faqsection = () => {
           Got questions? We’ve answered the most common queries about our
           services below. If you still need help, feel free to contact us.
         </motion.p>
-        <div className="flex items-center justify-center gap-24 py-20">
-          <div className="w-6/12">
+        <div className="flex flex-col-reverse lg:flex-row items-center justify-center gap-24 py-20">
+          <div className=" w-full lg:w-6/12">
             <div>
               {faqData.map((item, i) => (
                 <motion.div
@@ -56,7 +56,7 @@ const Faqsection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 0.9 }}
             viewport={{ once: true }}
-            className="w-5/12 bg-white px-10 py-12 rounded-3xl"
+            className="w-full lg:w-5/12 bg-white px-10 py-12 rounded-3xl"
           >
             <h3 className="font-bold">
               Didn’t find what you’re looking for? <br /> Let’s connect!

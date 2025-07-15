@@ -5,19 +5,23 @@ import { motion } from "framer-motion";
 
 const Companysbox = () => {
   return (
-    <div className="py-10  bg-red-50">
-      <div className=" flex items-center justify-between Pagearea gap-16">
-        <motion.h5
+    <div className="py-16  bg-gray-50">
+      <div className=" flex flex-col lg:flex-row items-center justify-between Pagearea gap-14 lg:gap-16">
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.2 }}
           viewport={{ once: true }}
-          className=" font-medium w-5/12"
+          className=" font-medium w-full text-center lg:w-5/12"
         >
-          Freedom our 460+ company working our teamwork
-        </motion.h5>
+          <h2>Our Happy Coustumar</h2>
+          <p className="mt-4 sm:mt-6">
+            {" "}
+            Freedom our 460+ company working our teamwork
+          </p>
+        </motion.div>
 
-        <div className="  w-7/12  grid grid-cols-3 items-center   justify-between gap-22 ">
+        <div className="  w-11/12 sm:w-10/12 lg:w-7/12  grid grid-cols-3 items-center   justify-between gap-14 sm:gap-20 lg:gap-28 ">
           {companyData &&
             companyData.map((data, i) => {
               return (
@@ -27,7 +31,7 @@ const Companysbox = () => {
                   transition={{ duration: 0.4, delay: i * 0.2 }}
                   viewport={{ once: true }}
                   key={i}
-                  className=" w-full h-[100px]   flex items-center justify-center shrink-0"
+                  className=" w-full aspect-video   flex items-center justify-center shrink-0"
                 >
                   <img
                     loading="lazy"

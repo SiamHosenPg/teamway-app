@@ -10,8 +10,8 @@ import {
 const Footer = () => {
   return (
     <div className="bg-gray-900 py-28">
-      <div className="Pagearea flex gap-16 justify-between text-gray-300">
-        <div className="w-2/5 flex flex-col gap-6">
+      <div className="Pagearea flex flex-col-reverse sm:flex-row gap-16 justify-between text-gray-300">
+        <div className="w-full md:w-2/5 flex flex-col gap-6">
           <div className="w-[180px]">
             <img src="/appimage/teamway-logo-white.svg" alt="" />
           </div>
@@ -35,7 +35,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="w-1/5">
+        <div className="w-full sm:w-2/5 md:w-1/5">
           <ul className="flex flex-col gap-2">
             <li className="font-semibold text-white mb-4 ">About Us</li>
             <li>Our Team</li>
@@ -46,7 +46,7 @@ const Footer = () => {
             <li>Contact Us</li>
           </ul>
         </div>
-        <div className="w-1/5">
+        <div className=" hidden md:block w-1/5">
           <ul className="flex flex-col gap-2">
             <li className="font-semibold text-white mb-4 ">Services</li>
             <li>Web Design</li>
@@ -57,7 +57,7 @@ const Footer = () => {
             <li>Digital Marketing</li>
           </ul>
         </div>
-        <div className="w-1/5">
+        <div className=" hidden lg:block w-1/5">
           <ul className="flex flex-col gap-2">
             <li className="font-semibold text-white mb-4 ">Contact</li>
             <li>Resources</li>

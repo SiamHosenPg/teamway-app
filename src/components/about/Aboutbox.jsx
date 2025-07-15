@@ -9,8 +9,8 @@ const Aboutbox = () => {
   return (
     <div className=" pt-20">
       <div className="Pagearea bg-gray-100 py-24 pb-30">
-        <div className="flex items-center justify-between gap-20">
-          <div className="w-6/12 relative" data-aos="zoom-out-down">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-20">
+          <div className=" w-10/12 lg:w-6/12 relative" data-aos="zoom-out-down">
             <motion.img
               initial={{ opacity: 0, x: -40 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -77,7 +77,7 @@ const Aboutbox = () => {
               </div>
             </motion.div>
           </div>
-          <div className="w-5/12 ">
+          <div className=" w-full lg:w-5/12 ">
             <motion.h5
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
