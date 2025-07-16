@@ -6,10 +6,10 @@ import { testimonialData } from "./testimonialdata";
 const Testimonial = () => {
   return (
     <div className="Pagearea">
-      <div className="py-32 flex flex-col lg:flex-row items-center gap-22 justify-between">
+      <div className=" py-16 sm:py-22 lg:py-32 flex flex-col lg:flex-row items-center gap-12 sm:gap-22 justify-between">
         <div className=" w-full text-center lg:text-left lg:w-[50%]">
           <h2>What Our Customers Say</h2>
-          <p className="text-gray-500 mt-10 leading-6">
+          <p className="text-gray-500  mt-5 sm:mt-10 leading-6">
             We value our customers' feedback and strive to provide the best
             service possible. Here are some testimonials from our satisfied
             clients who have experienced our commitment to excellence.
@@ -20,17 +20,17 @@ const Testimonial = () => {
         </div>
         <div className=" w-full lg:w-[50%]">
           {testimonialData && testimonialData.length > 0 ? (
-            <div className="flex flex-col gap-8  items-end  relative">
+            <div className="flex flex-col gap-4 sm:gap-8  items-end  relative">
               {testimonialData.map((testimonial, i) => (
                 <div
                   key={i}
                   className={` ${
                     i == 1
                       ? "bg-[#f3f9ff] w-[100%] right-0  border-l-blue-500"
-                      : "bg-white w-[86%] right-0 border-l-yellow-500"
-                  } flex gap-6 right-0  p-6 rounded-lg border border-gray-200  border-l-6  relative `}
+                      : "bg-white w-full sm:w-[86%] right-0 border-l-yellow-500"
+                  } flex gap-4 sm:gap-6 right-0  p-4 sm:p-6 rounded-lg border border-gray-200  border-l-6  relative `}
                 >
-                  <div className="flex-shrink-0 w-20 h-20 rounded-full bg-gray-300 border border-gray-100 ">
+                  <div className="flex-shrink-0 w-16 sm:w-20 h-16 sm:h-20 rounded-full bg-gray-300 border border-gray-100 ">
                     <img
                       src={testimonial.image}
                       alt={testimonial.name}

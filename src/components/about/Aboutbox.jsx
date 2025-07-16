@@ -7,10 +7,13 @@ import { IoCheckmarkDoneCircle } from "react-icons/io5";
 
 const Aboutbox = () => {
   return (
-    <div className=" pt-20">
+    <div className=" pt-0 lg:pt-20">
       <div className="Pagearea bg-gray-100 py-24 pb-30">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-20">
-          <div className=" w-10/12 lg:w-6/12 relative" data-aos="zoom-out-down">
+          <div
+            className=" w-11/12 sm:w-10/12 lg:w-6/12 relative"
+            data-aos="zoom-out-down"
+          >
             <motion.img
               initial={{ opacity: 0, x: -40 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -25,13 +28,13 @@ const Aboutbox = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 1.1 }}
               viewport={{ once: true }}
-              className="bg-gray-100 p-4 absolute bottom-[-40px] right-0  rounded-4xl"
+              className="bg-gray-100 p-2 sm:p-4 absolute bottom-[-40px] right-0  rounded-4xl "
             >
-              <div className=" bg-white w-[380px] h-[200px] rounded-3xl px-6 py-4">
+              <div className=" bg-white w-[290px] sm:w-[380px] h-[140px] sm:h-[200px] rounded-3xl px-4 sm:px-6 py-3 sm:py-4">
                 <h6 className=" font-semibold">
                   Our 48m clobarate in project teamwork.
                 </h6>
-                <p className="text-sm mt-4">
+                <p className=" hidden sm:block text-sm mt-4">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Repudiandae doloremque consequatur delectus!
                 </p>
@@ -83,7 +86,7 @@ const Aboutbox = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.3 }}
               viewport={{ once: true }}
-              className="font-medium"
+              className="font-medium hidden lg:block"
             >
               About
             </motion.h5>
@@ -92,6 +95,7 @@ const Aboutbox = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.4 }}
               viewport={{ once: true }}
+              className="text-center lg:text-left"
             >
               Export solution for your Finalcatil Future
             </motion.h2>
@@ -100,7 +104,7 @@ const Aboutbox = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.5 }}
               viewport={{ once: true }}
-              className="mt-10 w-11/12"
+              className=" mt-6 lg:mt-10 w-full lg:w-11/12 text-center lg:text-left"
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Accusantium ut totam dolorem ratione repellat, tempora velit ullam
@@ -112,7 +116,7 @@ const Aboutbox = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.6 }}
               viewport={{ once: true }}
-              className="grid grid-cols-2 gap-5 mt-10"
+              className="grid   grid-cols-1 sm:grid-cols-2 gap-5 mt-10"
             >
               <div>
                 <IoCheckmarkDoneCircle className="inline text-2xl text-yellow-500" />

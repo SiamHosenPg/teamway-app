@@ -53,6 +53,9 @@ h4 {
 h5 {
   font-size: 20px;
 }
+h6 {
+  font-size: 17px;
+}
 
 /* Responsive styles */
 @media (max-width: 1268px) {
@@ -63,6 +66,12 @@ h5 {
   h2 {
     font-size: 20px;
     font-weight: 700;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h6 {
+    font-size: 15px;
   }
 }
 @media (max-width: 1568px) {
