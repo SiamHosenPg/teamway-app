@@ -16,7 +16,7 @@ const Header = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 0.9 }}
             viewport={{ once: true }}
-            className="w-11/12 text-center lg:text-left"
+            className=" w-full lg:w-11/12 text-center lg:text-left"
           >
             Dolor sit amet consectetur Quod quibusdam odit voluptatem.
           </motion.h1>
@@ -25,7 +25,7 @@ const Header = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 1.1 }}
             viewport={{ once: true }}
-            className="mt-6 lg:mt-14 w-full md:w-11/12 text-center lg:text-left "
+            className="mt-6 lg:mt-14 w-full lg:w-11/12 text-center lg:text-left "
           >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
             quibusdam odit voluptatem. Dolor sit amet consectetur adipisicing

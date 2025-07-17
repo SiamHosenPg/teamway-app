@@ -4,8 +4,15 @@ import { motion } from "framer-motion";
 import { faqData } from "./faqdata";
 import Button from "../button/Button";
 import { FaCaretDown } from "react-icons/fa";
+import { useState } from "react";
 
 const Faqsection = () => {
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const handleToggle = (id) => {
+    setActiveIndex((prevId) => (prevId === id ? null : id));
+  };
+
   return (
     <div>
       <div className="Pagearea bg-gray-100 py-16 sm:py-22 lg:py-24 pb-16 sm:pb-30">
@@ -38,13 +45,32 @@ const Faqsection = () => {
                   transition={{ duration: 0.4, delay: i * 0.3 }}
                   viewport={{ once: true }}
                   key={i}
-                  className=" p-2  border-b border-gray-300"
+                  className=" p-2 transition-all border-b border-gray-300"
                 >
                   <div className="flex items-center py-3 justify-between ">
-                    <h6 className=" font-semibold ">{item.question}</h6>
-                    <FaCaretDown className="text-xl" />
+                    <h6
+                      onClick={() => handleToggle(item.id)}
+                      className=" font-semibold "
+                    >
+                      {item.question}
+                    </h6>
+                    <FaCaretDown
+                      onClick={() => handleToggle(item.id)}
+                      className={`text-xl duration-300 ${
+                        activeIndex === item.id
+                          ? " rotate-[-90deg]"
+                          : "rotate-0"
+                      }`}
+                    />
                   </div>
-                  <p className="text-gray-700 py-4 pb-8  text-sm lg:text-base ">
+
+                  <p
+                    className={`text-gray-600 transition-all duration-900 text-sm lg:text-base ${
+                      activeIndex === item.id
+                        ? "h-[100px]  overflow-hidden  "
+                        : "h-0 overflow-hidden pb-0 "
+                    } `}
+                  >
                     {item.answer}
                   </p>
                 </motion.div>

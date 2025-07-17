@@ -143,15 +143,17 @@ const Aboutbox = () => {
                 </span>
               </div>
             </motion.div>
-            <div className="flex items-center gap-4 mt-14 w-11/12">
+            <div className="flex items-center gap-4 mt-14 w-12/12 sm:w-9/12 2xl:w-8/12">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.7 }}
                 viewport={{ once: true }}
-                className="bg-white rounded-md w-full  px-6 py-4"
+                className="  w-2/6 border-r border-l pl-4 border-gray-300"
               >
-                <h4 className="font-medium">38K</h4>
+                <h4 className="font-semibold">
+                  38<span className="text-lg">K</span>
+                </h4>
                 <span className="block uppercase text-[12px] font-medium text-gray-600">
                   Project
                 </span>
@@ -161,9 +163,11 @@ const Aboutbox = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.8 }}
                 viewport={{ once: true }}
-                className="bg-white rounded-md w-full  px-6 py-4 "
+                className="  w-2/6  border-r border-gray-300 "
               >
-                <h4 className="font-medium">57M</h4>
+                <h4 className="font-semibold">
+                  57<span className="text-lg">M</span>
+                </h4>
                 <span className="block uppercase text-[12px] font-medium text-gray-600">
                   Total Revenue
                 </span>
@@ -173,9 +177,11 @@ const Aboutbox = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.9 }}
                 viewport={{ once: true }}
-                className="bg-white rounded-md w-full  px-6 py-4 "
+                className="  w-2/6   "
               >
-                <h4 className="font-medium">768M +</h4>
+                <h4 className="font-semibold">
+                  76<span className="text-lg">M</span>
+                </h4>
                 <span className="block uppercase text-[12px] font-medium text-gray-600">
                   Total User
                 </span>
