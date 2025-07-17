@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 const Header = () => {
   return (
-    <div className="   h-auto pt-32 pb-24 lg:pt-6 lg:h-screen max-h-[1870px] ">
+    <div className="   h-auto pt-32 pb-24 lg:pt-16 lg:h-screen max-h-[1870px] ">
       <div className="Pagearea flex flex-col-reverse lg:flex-row  gap-32  lg:gap-10   items-center justify-between h-full mt-[-60px] ">
         <div className="left w-full lg:w-6/12">
           <motion.h1
@@ -18,7 +18,7 @@ const Header = () => {
             viewport={{ once: true }}
             className=" w-full lg:w-11/12 text-center lg:text-left"
           >
-            Dolor sit amet consectetur Quod quibusdam odit voluptatem.
+            Empowering Your Business With Smart & Scalable Solutions
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -27,9 +27,12 @@ const Header = () => {
             viewport={{ once: true }}
             className="mt-6 lg:mt-14 w-full lg:w-11/12 text-center lg:text-left "
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
-            quibusdam odit voluptatem. Dolor sit amet consectetur adipisicing
-            elit. Quod quibusdam odit voluptatem.
+            Teamway is a modern service-based agency dedicated to helping
+            businesses grow with tailored digital solutions. Whether you're a
+            startup or an established brand, our skilled team delivers creative,
+            high-performance strategies that drive real results. At Teamway, we
+            blend innovation, technology, and strategy to unlock your business’s
+            true potential.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -48,15 +51,17 @@ const Header = () => {
               transition={{ duration: 0.4, delay: 1.5 }}
               viewport={{ once: true }}
             >
-              <h3 className="font-medium">287K</h3>
-              <p className="text-sm">Active Status</p>
+              <h3 className="font-semibold">14+</h3>
+              <p className="text-[13px] font-medium text-gray-600 uppercase">
+                Experience
+              </p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 20, scale: 0.8 }}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
               transition={{ duration: 0.4, delay: 1.5 }}
               viewport={{ once: true }}
-              className="w-[1px] h-14 shrink-0 bg-gray-800"
+              className="w-[1px] h-14 shrink-0 bg-gray-300"
             ></motion.div>
             <motion.div
               initial={{ opacity: 0, y: 20, scale: 0.8 }}
@@ -64,15 +69,17 @@ const Header = () => {
               transition={{ duration: 0.4, delay: 1.6 }}
               viewport={{ once: true }}
             >
-              <h3 className="font-medium">287K</h3>
-              <p className="text-sm">Active Status</p>
+              <h3 className="font-semibold">250+</h3>
+              <p className="text-[13px] font-medium text-gray-600 uppercase">
+                Projects
+              </p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 20, scale: 0.8 }}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
               transition={{ duration: 0.4, delay: 1.6 }}
               viewport={{ once: true }}
-              className="w-[1px] h-14 shrink-0 bg-gray-800"
+              className="w-[1px] h-14 shrink-0 bg-gray-300"
             ></motion.div>
             <motion.div
               initial={{ opacity: 0, y: 20, scale: 0.8 }}
@@ -80,8 +87,10 @@ const Header = () => {
               transition={{ duration: 0.4, delay: 1.7 }}
               viewport={{ once: true }}
             >
-              <h3 className="font-medium">287K</h3>
-              <p className="text-sm">Active Status</p>
+              <h3 className="font-semibold">500+</h3>
+              <p className="text-[13px] font-medium text-gray-600 uppercase">
+                Employee
+              </p>
             </motion.div>
           </div>
         </div>
@@ -128,13 +137,14 @@ const Header = () => {
               viewport={{ once: true }}
               className="bg-white p-2 sm:p-3 absolute top-0 right-0 mt-[35%] sm:mt-[49%] 2xl:mt-[40%] mr-[-170px] sm:mr-[-270px] 2xl:mr-[-380px] z-20 rounded-3xl sm:rounded-4xl"
             >
-              <div className=" bg-gray-100 w-[310px] sm:w-[350px] 2xl:w-[400px]  h-[150px] 2xl:h-[200px] rounded-3xl px-5 sm:px-6 py-4">
+              <div className=" bg-gray-100 w-[310px] sm:w-[350px] 2xl:w-[400px]  h-[130px] 2xl:h-[200px] rounded-3xl px-5 sm:px-6 py-4">
                 <h6 className=" font-semibold">
-                  Our 48m clobarate in project teamwork.
+                  Rated excellent by our clients
                 </h6>
                 <p className="text-sm mt-4 hidden 2xl:block">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Repudiandae doloremque consequatur delectus!
+                  Our clients consistently rate us 5 stars for quality,
+                  reliability, and teamwork a reflection of our commitment to
+                  excellence.
                 </p>
                 <div className="mt-3 flex items-center gap-3">
                   <div className="flex items-center  ">

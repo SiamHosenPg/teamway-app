@@ -30,13 +30,14 @@ const Aboutbox = () => {
               viewport={{ once: true }}
               className="bg-gray-100 p-2 sm:p-4 absolute bottom-[-40px] right-0  rounded-4xl "
             >
-              <div className=" bg-white w-[290px] sm:w-[380px] h-[140px] sm:h-[200px] rounded-3xl px-4 sm:px-6 py-3 sm:py-4">
+              <div className=" bg-white w-[290px] sm:w-[380px] h-[140px] sm:h-[200px] lg:h-[220px] rounded-3xl px-4 sm:px-6 py-3 sm:py-4">
                 <h6 className=" font-semibold">
-                  Our 48m clobarate in project teamwork.
+                  Clients love working with Teamway
                 </h6>
                 <p className=" hidden sm:block text-sm mt-4">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Repudiandae doloremque consequatur delectus!
+                  Our commitment to quality, communication, and results has
+                  earned us lasting relationships and 5-star feedback from
+                  clients around the world.
                 </p>
                 <div className="mt-3 flex items-center gap-3">
                   <div className="flex items-center  ">
@@ -81,15 +82,6 @@ const Aboutbox = () => {
             </motion.div>
           </div>
           <div className=" w-full lg:w-5/12 ">
-            <motion.h5
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: 0.3 }}
-              viewport={{ once: true }}
-              className="font-medium hidden lg:block"
-            >
-              About
-            </motion.h5>
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -97,7 +89,7 @@ const Aboutbox = () => {
               viewport={{ once: true }}
               className="text-center lg:text-left"
             >
-              Export solution for your Finalcatil Future
+              Discover the Story Behind Teamway Your Trusted Digital Partner
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -106,40 +98,40 @@ const Aboutbox = () => {
               viewport={{ once: true }}
               className=" mt-6 lg:mt-10 w-full lg:w-11/12 text-center lg:text-left"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Accusantium ut totam dolorem ratione repellat, tempora velit ullam
-              id cupiditate ex pariatur quidem sequi saepe quas, libero commodi
-              vel laboriosam quia.
+              Teamway is a dedicated service agency focused on delivering
+              innovative digital solutions that empower businesses to thrive.
+              With a skilled team and customer-centric approach, we turn ideas
+              into impactful results.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.6 }}
               viewport={{ once: true }}
-              className="grid   grid-cols-1 sm:grid-cols-2 gap-5 mt-10"
+              className="grid   grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 2xl:grid-cols-2 gap-5 mt-10"
             >
               <div>
-                <IoCheckmarkDoneCircle className="inline text-2xl text-yellow-500" />
-                <span className="ml-2 font-medium">
-                  Lorem ipsum dolor sit amet.
+                <IoCheckmarkDoneCircle className="inline text-2xl text-green-600" />
+                <span className="ml-2 text-sm font-medium">
+                  Skilled and Experienced Professionals
                 </span>
               </div>
               <div className="">
-                <IoCheckmarkDoneCircle className="inline text-2xl text-yellow-500" />
-                <span className="ml-2 font-medium">
-                  Lorem ipsum dolor sit amet.
+                <IoCheckmarkDoneCircle className="inline text-2xl text-green-600" />
+                <span className="ml-2 text-sm font-medium">
+                  Collaborative and Team-Oriented
                 </span>
               </div>
               <div>
-                <IoCheckmarkDoneCircle className="inline text-2xl text-yellow-500" />
-                <span className="ml-2 font-medium">
-                  Lorem ipsum dolor sit amet.
+                <IoCheckmarkDoneCircle className="inline text-2xl text-green-600" />
+                <span className="ml-2 text-sm font-medium">
+                  Innovative and Creative Thinkers
                 </span>
               </div>
               <div>
-                <IoCheckmarkDoneCircle className="inline text-2xl text-yellow-500" />
-                <span className="ml-2 font-medium">
-                  Lorem ipsum dolor sit amet.
+                <IoCheckmarkDoneCircle className="inline text-2xl text-green-600" />
+                <span className="ml-2 text-sm font-medium">
+                  Reliable and Committed
                 </span>
               </div>
             </motion.div>

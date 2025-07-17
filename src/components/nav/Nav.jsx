@@ -18,7 +18,7 @@ const Nav = () => {
           <li>About</li>
         </ul>
         <div className="hidden xl:block">
-          <button className="px-4 py-2 border border-gray-300 rounded-full">
+          <button className="px-4 py-2 border border-gray-600 rounded-full">
             Contucts
           </button>
         </div>
