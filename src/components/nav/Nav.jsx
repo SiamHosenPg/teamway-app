@@ -13,9 +13,9 @@ const Nav = () => {
         <ul className="hidden md:flex items-center gap-10  font-medium ">
           <li>Home</li>
           <li>About</li>
-          <li>Projects</li>
-          <li>News</li>
-          <li>About</li>
+          <li>Services</li>
+          <li>Packages</li>
+          <li>Contact </li>
         </ul>
         <div className="hidden xl:block">
           <button className="px-4 py-2 border border-gray-600 rounded-full">

@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 const Header = () => {
   return (
-    <div className="   h-auto pt-32 pb-24 lg:pt-16 lg:h-screen max-h-[1870px] ">
+    <div className="   h-auto pt-32 pb-24 lg:pt-16 lg:h-screen xl:pt-32 2xl:pt-16 xl:pb-32 2xl:pb-24  xl:h-auto 2xl:h-screen max-h-[1870px] ">
       <div className="Pagearea flex flex-col-reverse lg:flex-row  gap-32  lg:gap-10   items-center justify-between h-full mt-[-60px] ">
         <div className="left w-full lg:w-6/12">
           <motion.h1

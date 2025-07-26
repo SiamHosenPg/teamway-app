@@ -5,9 +5,9 @@ const Button = ({ buttonname, model }) => {
     <div
       className={`${
         model == "color"
-          ? "bg-yellow-600 border-yellow-600 text-white"
+          ? "bg-black border-black text-white"
           : "bg-transparent "
-      } border px-7 py-3 rounded-full font-medium w-fit`}
+      } border px-7 py-3 rounded-full font-medium w-fit hover:scale-95 transition-all duration-200`}
     >
       {buttonname}
     </div>
