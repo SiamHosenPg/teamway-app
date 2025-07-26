@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Companysbox = () => {
   return (
-    <div className="py-16  bg-gray-50">
+    <div className="py-16  bg-foreground">
       <div className=" flex flex-col lg:flex-row items-center justify-between Pagearea gap-14 lg:gap-26">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -15,7 +15,7 @@ const Companysbox = () => {
           className=" w-full text-center lg:w-5/12 lg:text-left"
         >
           <h2>Our Happy Customers</h2>
-          <p className="mt-4 sm:mt-6 w-full 2xl:w-10/12">
+          <p className="mt-4 sm:mt-6 w-full 2xl:w-10/12 text-text-secondary">
             Trusted by over 460+ companies who rely on our teamwork and
             dedication to achieve real results with freedom and flexibility.
           </p>

@@ -15,7 +15,7 @@ const Faqsection = () => {
 
   return (
     <div>
-      <div className="Pagearea bg-gray-100 py-16 sm:py-22 lg:py-24 pb-16 sm:pb-30">
+      <div className="Pagearea bg-foreground py-16 sm:py-22 lg:py-24 pb-16 sm:pb-30">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -30,7 +30,7 @@ const Faqsection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.3 }}
           viewport={{ once: true }}
-          className="text-center text-gray-600 mt-4 mb-0 sm:mb-8 lg:mb-12"
+          className="text-center text-text-secondary mt-4 mb-0 sm:mb-8 lg:mb-12"
         >
           Got questions? We’ve answered the most common queries about our
           services below. If you still need help, feel free to contact us.
@@ -65,7 +65,7 @@ const Faqsection = () => {
                   </div>
 
                   <p
-                    className={`text-gray-600 transition-all duration-900 text-sm lg:text-base ${
+                    className={`text-text-secondary transition-all duration-900 text-sm lg:text-base ${
                       activeIndex === item.id
                         ? "h-[100px]  overflow-hidden  "
                         : "h-0 overflow-hidden pb-0 "
@@ -82,12 +82,12 @@ const Faqsection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 0.9 }}
             viewport={{ once: true }}
-            className="w-full lg:w-5/12 bg-white px-10 py-12 rounded-3xl"
+            className="w-full lg:w-5/12 bg-background px-10 py-12 rounded-3xl"
           >
             <h3 className="font-bold">
               Didn’t find what you’re looking for? Let’s connect!
             </h3>
-            <p className="text-gray-600 mt-4 sm:mt-10 text-sm sm:text-base ">
+            <p className="text-text-secondary mt-4 sm:mt-10 text-sm sm:text-base ">
               Couldn’t find the answer you need? No problem — our team is here
               to help. Just reach out with your question, and we’ll get back to
               you as soon as possible. We’re always happy to connect and assist

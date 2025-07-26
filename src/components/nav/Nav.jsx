@@ -5,7 +5,7 @@ import { FaBarsStaggered } from "react-icons/fa6";
 
 const Nav = () => {
   return (
-    <div className=" w-full h-[72px] sticky top-0 bg-white z-50 border-b border-gray-300  overflow-hidden">
+    <div className=" w-full h-[72px] sticky top-0  z-50 border-b border-border bg-background  overflow-hidden">
       <div className=" Pagearea h-full  flex items-center justify-between">
         <div className="logo w-[150px] h-full flex items-center ">
           <img src="/appimage/teamway-logo-black.svg" alt="" />

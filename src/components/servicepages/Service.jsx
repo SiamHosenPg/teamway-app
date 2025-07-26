@@ -22,7 +22,7 @@ const Service = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.3 }}
           viewport={{ once: true }}
-          className="text-center text-gray-600 mt-4 mb-12"
+          className="text-center text-text-secondary mt-4 mb-12"
         >
           We provide smart and scalable digital solutions to help your brand
           grow faster and look better online.
@@ -37,7 +37,7 @@ const Service = () => {
                   transition={{ duration: 0.3, delay: i * 0.2 }}
                   viewport={{ once: true }}
                   key={i}
-                  className=" px-4 sm:px-8 py-6 sm:py-12 flex gap-4 sm:gap-6 rounded-lg border border-gray-200 bg-gray-50  hover:bg-blue-50 duration-300 "
+                  className=" px-4 sm:px-8 py-6 sm:py-12 flex gap-4 sm:gap-6 rounded-lg border border-border bg-foreground  hover:bg-bghover duration-300 "
                 >
                   <div className="w-20 h-20 shrink-0 flex items-center justify-center bg-white border border-gray-200 p-4 rounded">
                     <img
@@ -50,7 +50,7 @@ const Service = () => {
                     <b className=" text-base font-semibold mb-2">
                       {service.title}
                     </b>
-                    <p className="text-gray-600 text-sm mt-2 sm:mt-4">
+                    <p className="text-text-secondary text-sm mt-2 sm:mt-4">
                       {service.description}
                     </p>
                   </div>
