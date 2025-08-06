@@ -2,8 +2,10 @@
 import React from "react";
 import { companyData } from "./companydata";
 import { motion } from "framer-motion";
+import { useDarkMode } from "@/hook/Darkmood";
 
 const Companysbox = () => {
+  const [darkMode] = useDarkMode();
   return (
     <div className="py-16  bg-foreground">
       <div className=" flex flex-col lg:flex-row items-center justify-between Pagearea gap-14 lg:gap-26">
@@ -35,7 +37,7 @@ const Companysbox = () => {
                 >
                   <img
                     loading="lazy"
-                    className=" w-full object-contain opacity-50 hover:scale-105 transition-transform duration-300"
+                    className={`  w-full object-contain opacity-80 hover:scale-105 transition-transform duration-300 `}
                     src={data.logo}
                     alt="Company Logo"
                   />

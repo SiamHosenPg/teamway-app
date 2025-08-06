@@ -65,7 +65,7 @@ const Faqsection = () => {
                   </div>
 
                   <p
-                    className={`text-text-secondary transition-all duration-900 text-sm lg:text-base ${
+                    className={`text-text-secondary transition-all duration-400 text-sm lg:text-base ${
                       activeIndex === item.id
                         ? "h-[100px]  overflow-hidden  "
                         : "h-0 overflow-hidden pb-0 "

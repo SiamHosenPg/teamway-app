@@ -5,10 +5,8 @@ import Nav from "../nav/Nav";
 import Button from "../button/Button";
 import { FaStar } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { useDarkMode } from "@/hook/Darkmood";
 
 const Header = () => {
-  const [darkMode, toggleDarkMode] = useDarkMode();
   return (
     <div className="   h-auto pt-32 pb-24 lg:pt-16 lg:h-screen xl:pt-32 2xl:pt-16 xl:pb-32 2xl:pb-24  xl:h-auto 2xl:h-screen max-h-[1870px] ">
       <div className="Pagearea flex flex-col-reverse lg:flex-row  gap-32  lg:gap-10   items-center justify-between h-full mt-[-60px] ">
@@ -19,7 +17,6 @@ const Header = () => {
             transition={{ duration: 0.4, delay: 0.9 }}
             viewport={{ once: true }}
             className=" w-full lg:w-11/12 text-center lg:text-left text-text"
-            onClick={toggleDarkMode}
           >
             Empowering Your Business With Smart & Scalable Solutions
           </motion.h1>
